@@ -14,7 +14,7 @@ namespace CSPractice1
             //int base = 0;
             var abc = 3;
             //var var = 3;
-            
+
             //한줄주석
             /*
              * 여러줄 주석
@@ -22,7 +22,9 @@ namespace CSPractice1
             /*** XML 주석 ***/
 
 
-            
+            //#1 12-2. 출력
+            Console.WriteLine("Hello World");
+            Console.Write("줄바꿈 싫어");
         }
     }
 }
