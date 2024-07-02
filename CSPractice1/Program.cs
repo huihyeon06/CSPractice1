@@ -6,6 +6,27 @@ using System.Threading.Tasks;
 
 namespace CSPractice1
 {
+    class Box
+    {
+        public int Width { get; set; }
+        private int myVar;
+
+        public int Height
+        {
+            get { return Height; }
+            set
+            {
+                if (value > 0)
+                {
+                    Height = value;
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+        }
+    }
     class Sample
     {
         public static int value;
@@ -249,6 +270,11 @@ namespace CSPractice1
 
             // #5 22-7. 소멸자
 
+            // #5 22-8. 속성(Property)
+            Box b = new Box();
+            b.Width = 180;
+            b.Height = 100;
+            b.Height = -100; 
 
 
         }
