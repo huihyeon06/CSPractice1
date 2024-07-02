@@ -10,6 +10,7 @@ namespace CSPractice1
     {
         public static int classVar = 1;
         public int instanceVar = 2;
+        //Abs (int)
         public static int Abs(int input)
         {
             Console.WriteLine(classVar);
@@ -17,6 +18,17 @@ namespace CSPractice1
             //Console.WriteLine(instanceVar); 
             return (input >=0) ? input : -input;
         }
+        //Abs (double)
+        public static double Abs(double input)
+        {
+            return 0;
+        }
+        //Abs (int)
+        //메서드 시그네이처 (이름, 매개변수)가 겹처서 안됨
+        /*public static double Abs(int x)
+        {
+            return 0;
+        }*/
     }
     class FirstClass
     {
@@ -204,6 +216,16 @@ namespace CSPractice1
             //Console.WriteLine(p1.TAX_RATIO); //Java는 가능하나 C#은 X
 
             // #5 22-3. 클래스 메서드
+
+            // #5 22-4. 메서드 오버로딩
+            Console.WriteLine(MyMath.Abs(-10)); //Abs(int)
+            Console.WriteLine(MyMath.Abs(10.0)); //Abs(double)
+            Console.WriteLine(MyMath.Abs(-10L)); //Abs(double)
+            Console.WriteLine(MyMath.Abs(3.0f)); //Abs(double) 표현 가능한 수의 범위가 float이 더 크기 때문에 가능
+
+            
+
+
 
         }
     }
